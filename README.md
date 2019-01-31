@@ -5,10 +5,10 @@ In case of having questions in any steps please do not hesitate to ask from your
 Kindly follow the below steps : 
 ## 1. Setup Environment
 Install and setup following tools in your Laptop/pc : 
-    * OpenJDK
-    * Maven
-    * Git
-    * Intellij
+- OpenJDK
+- Maven
+- Git
+- Intellij
     
 ## 2. Bitbucket
 The backend Onboarding project is located in [here](https://git.virtual-identity.com/projects/VI/repos/vi-backend-onboarding). 
