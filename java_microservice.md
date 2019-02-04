@@ -1,4 +1,4 @@
-# 1. Setup Environment
+# 01. Setup Environment
 ## Resources
 - [Backend Development Standards](https://teamspace.virtual-identity.com/display/DEV/Standards+for+Backend+Developoment)
 
@@ -9,8 +9,8 @@ Install and setup the following tools in your machine:
 - [Maven](https://maven.apache.org/) 
 - [Git](https://git-scm.com/)
 - [Intellij](https://www.jetbrains.com/idea/) 
-    
-# 2. Setup your first project
+  
+# 02. Setup your first project
 ## Resources
 - [Boilerplate Application](https://teamspace.virtual-identity.com/display/DEV/1.+Boilerplate+Application)
 
@@ -29,9 +29,10 @@ To check if the application has started successfully, call the already existing 
 - How can you add dependencies to your java project with Maven?
 - How can you build your project with Maven? 
 
-# 3. Make your first pull request
+# 03. Make your first pull request
 ## Resources
 - [Git Usage](https://teamspace.virtual-identity.com/display/DEV/2.+GIT)
+- [Spring Boot Getting Started Guide](https://spring.io/guides/gs/spring-boot)
 
 ## Challenge
 #### Create a new branch with your name from development branch.
@@ -48,7 +49,7 @@ Rebuild your application and rerun it locally to check the newly implemented api
 
 #### Create a pull request 
 Commit and push your changes to them remote feature branch.
-Create a pull request from your feature branch to your personal development branch in the Web UI of Bitbucket. Assign this pull request to your buddy as a reviewer.
+Create a pull request from your feature branch to your personal development branch in the Web UI of Bitbucket. Assign this pull request to your mentor as a reviewer.
 
 ## Questions
 - What's Git?
@@ -59,7 +60,10 @@ Create a pull request from your feature branch to your personal development bran
 - What does fetch mean?
 - What is a pull request?
 
-# 4. Adhere to the Coding Guidelines
+- What is Spring?
+- What ist Spring Boot?
+
+# 04. Adhere to the Coding Guidelines
 ## Resources
 - [Java Coding Guidelines](https://teamspace.virtual-identity.com/display/DEV/1.+Java#id-1.Java-CodingGuidelines)
 
@@ -75,30 +79,84 @@ If there is any change on your code, comiit an push it again and create a new pu
 - What are (in your opinion) the most important rules for writing clean code?
 - How can the compliance with these rules can be enforced?
 
-# 5. Application/Testing
+# 05. Add automated tests
+## Resources
+- [VI Test Guide](https://teamspace.virtual-identity.com/display/DEV/2.+Tests)
+- [Spring Boot Web Test Guide](https://spring.io/guides/gs/testing-web/)
+- [Spring Web Tests Reference](https://docs.spring.io/spring/docs/current/spring-framework-reference/testing.html#spring-mvc-test-framework)
+
+## Challenge
+#### Write an integration test for your controller
+The integration test should check that the api implementation (your controller) returns "Hello VI" as response body and  status code 200.
+Run your integration test inside your IDE to see that the test is green.
+
+From now on finish all your challenges by creating a pull request.
+
+## Questions
+- What is a unit test?
+- What is an integration test?
+- Which popular java test frameworks for automated tests exist?
+- Why are automated tests important?
+
+# 06. Implement a persisted data model
+## Resources
+- [Spring Data Overview](https://spring.io/projects/spring-data)
+- [Spring Data JPA Guide](https://spring.io/guides/gs/accessing-data-jpa/)
+
+## Challenge
+Let's start creating an application with some "real" logic. 
+In the onboarding project we will develop the backend for an (very simple) blog software.
+
+With this blog software, it should be possible to manage authors (with a first- and lastname) and blog entries  with a title, a text and a reference to an author.
+An author can write multiple entries and an entry could be written by only one author.
+When an author is deleted, all entries should be deleted too.
+
+#### Define your data model with enities
+Define entities for author and blog entry. You should use JPA annotations.
+
+#### Implement CRUD Services for the entities
+For ervery entity implement a service class, which provides create, read, update and delete methods for this entity.
+Both entities should be persisted in an in-memory database.
+
+#### Add tests
+Implement integration tests for your service classes, that check if your business logic works as expected and all data is persisted correctly in the database.
+
+## Questions
+- What is JPA?
+- What is Hibernate?
+- What is Spring Data? 
+
+# 07. APIs
+## Resources
+
+## Challenge
+Adapt your endpoints to HAL standard which is base on HATEOAS concept.
+Write Integration Test for your endpoints which check they follow HAL standard.
+
+## Questions
+- What is REST?
+- What is HATOAS?
+- What is HAL?
+- What is GraphQL?
+- In which cases would yo prefer GraphQL over REST?
+
+# Search
+## Resources
+
+## Challenge
+
+## Questions
+- What is the most popular search library in Java?
+- What popular java search frameworks and search servers exist?
+
+# Security
 ## Resources
 
 ## Challenge
 
 ## Questions
 
-***Note*** : in first steps we use in-memory h2 database for saving data
-Kindly implement below tasks. each tasks is a feature branch and after finishing a task send a pull request to your branch and assign your buddy as reviewer.
-
-1. Define and implement a GET enpoint which returns a list of your favorite Color
-2. Define a user entity. Add a service for CRUD actions and add endpoint for CRUD actions via using swagger
-3. Write Unit Test and Integration Test for your application.
-4. Adapt your endpoints to HAL standard which is base on HATEOAS concept.
-5. Write Integration Test for your endpoints which check they follow HAL standard.
- 
-# 6. Security
-## Resources
-
-## Challenge
-
-## Questions
-
-# 7. Deployment
+# Deployment
 ## Resources
 
 ## Challenge
