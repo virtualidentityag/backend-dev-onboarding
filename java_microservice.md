@@ -28,6 +28,7 @@ To check if the application has started successfully, call the already existing 
 - What is the benefit of using Maven?
 - How can you add dependencies to your java project with Maven?
 - How can you build your project with Maven? 
+- Which are the key technologies/libraries used in the boilerplate application?
 
 # 03. Make your first pull request
 ## Resources
@@ -121,6 +122,8 @@ Both entities should be persisted in an in-memory database.
 #### Add tests
 Implement integration tests for your service classes, that check if your business logic works as expected and all data is persisted correctly in the database.
 
+From now on, write tests for all your challenges.
+
 ## Questions
 - What is JPA?
 - What is Hibernate?
@@ -129,9 +132,30 @@ Implement integration tests for your service classes, that check if your busines
 # 07. APIs
 ## Resources
 
+- [HATEOAS](https://martinfowler.com/articles/richardsonMaturityModel.html)
+- [HATEOAS a simple explanation](https://www.e4developer.com/2018/02/16/hateoas-simple-explanation/)
+- [HAL Specification](http://stateless.co/hal_specification.html)
+- [Swagger/OpenAPI](Swagger/OpenAPI) 
+- [Spring MVC Exception Handling](https://spring.io/blog/2013/11/01/exception-handling-in-spring-mvc)
+
 ## Challenge
-Adapt your endpoints to HAL standard which is base on HATEOAS concept.
-Write Integration Test for your endpoints which check they follow HAL standard.
+So far, we created business and persistence logic for our tiny blogging software. Let's continue by making these services available by a REST API.
+
+#### Specify new endpoints for your services
+
+Please specify new HAL endpoints for all existing CRUD methods of your services in the api.yaml file. Consider meaningful HTTP methods, request models, response codes and response models. Models should be defined in JSON.
+
+Finally recompile your project with maven and check the generated java sources  for your endpoint definitions and response models.
+
+#### Add controller implementations
+
+Implement controller methods for generated controller stubs of your defined endpoints.
+
+Naturally, write integration tests which check the correct behaviour and response structure of your controllers.
+
+#### Add Error Handling
+
+Grant that exceptions and errors in your services and controllers are fetched and handled  in your controllers. to achieve that, extend the API specification for HTTP error codes and add exception handling to the Spring application.
 
 ## Questions
 - What is REST?
@@ -139,6 +163,7 @@ Write Integration Test for your endpoints which check they follow HAL standard.
 - What is HAL?
 - What is GraphQL?
 - In which cases would yo prefer GraphQL over REST?
+- What is Swagger and OpenAPI?
 
 # Search
 ## Resources
@@ -159,7 +184,12 @@ Write Integration Test for your endpoints which check they follow HAL standard.
 # Deployment
 ## Resources
 
+- [Spring Boot with Docker](https://spring.io/guides/gs/spring-boot-docker/)
+
+
+
 ## Challenge
 
-## Questions
+e. g. Build a Docker image of your application 
 
+## Questions
