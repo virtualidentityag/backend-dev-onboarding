@@ -129,7 +129,7 @@ From now on, write tests for all your challenges.
 - What is Hibernate?
 - What is Spring Data? 
 
-# 07. APIs
+# 07. REST APIs
 ## Resources
 
 - [HATEOAS](https://martinfowler.com/articles/richardsonMaturityModel.html)
@@ -161,35 +161,14 @@ Grant that exceptions and errors in your services and controllers are fetched an
 - What is REST?
 - What is HATOAS?
 - What is HAL?
-- What is GraphQL?
-- In which cases would yo prefer GraphQL over REST?
 - What is Swagger and OpenAPI?
 
-# Search
+# 08. GraphQL Interfaces
 ## Resources
+- [Spring Boot GraphQL Tutorial](https://www.baeldung.com/spring-graphql)
 
 ## Challenge
 
 ## Questions
-- What is the most popular search library in Java?
-- What popular java search frameworks and search servers exist?
-
-# Security
-## Resources
-
-## Challenge
-
-## Questions
-
-# Deployment
-## Resources
-
-- [Spring Boot with Docker](https://spring.io/guides/gs/spring-boot-docker/)
-
-
-
-## Challenge
-
-e. g. Build a Docker image of your application 
-
-## Questions
+- What is GraphQL?
+- In which cases would yo prefer GraphQL over REST?
