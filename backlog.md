@@ -26,3 +26,12 @@
 e. g. Build a Docker image of your application 
 
 ## Questions
+
+# Performance
+## Resources
+- monitoring
+- profiling
+
+## Challenge
+
+## Questions
