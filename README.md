@@ -1,7 +1,7 @@
 # Welcome
 This is an onboarding guide for new backend developers at Virtual Identity.
 
-We as a backend community want to be on a bleeding age of techs. How? Just look at our <a href="http://manifest-dev.virtual-identity.com/">Development manifesto</a>
+We as a backend community want to be on a bleeding age of techs. How? Just look at our [Development manifesto](http://manifest-dev.virtual-identity.com/)
 
 In case of having questions in any steps please do not hesitate to ask from your buddy.
 
