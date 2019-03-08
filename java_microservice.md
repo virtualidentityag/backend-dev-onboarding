@@ -1,4 +1,5 @@
 # 01. Setup Environment
+**Complexity Level 0**
 ## Resources
 - [Backend Development Standards](https://teamspace.virtual-identity.com/display/DEV/Standards+for+Backend+Developoment)
 
@@ -11,6 +12,7 @@ Install and setup the following tools in your machine:
 - [Intellij](https://www.jetbrains.com/idea/) 
   
 # 02. Setup your first project
+**Complexity Level 1**
 ## Resources
 - [Boilerplate Application](https://teamspace.virtual-identity.com/display/DEV/1.+Boilerplate+Application)
 
@@ -31,6 +33,7 @@ To check if the application has started successfully, call the already existing 
 - Which are the key technologies/libraries used in the boilerplate application?
 
 # 03. Make your first pull request
+**Complexity Level 1**
 ## Resources
 - [Git Usage](https://teamspace.virtual-identity.com/display/DEV/2.+GIT)
 - [Spring Boot Getting Started Guide](https://spring.io/guides/gs/spring-boot)
@@ -65,6 +68,7 @@ Create a pull request from your feature branch to your personal development bran
 - What ist Spring Boot?
 
 # 04. Adhere to the Coding Guidelines
+**Complexity Level 1**
 ## Resources
 - [Java Coding Guidelines](https://teamspace.virtual-identity.com/display/DEV/1.+Java#id-1.Java-CodingGuidelines)
 
@@ -81,6 +85,7 @@ If there is any change on your code, comiit an push it again and create a new pu
 - How can the compliance with these rules can be enforced?
 
 # 05. Add automated tests
+**Complexity Level 2**
 ## Resources
 - [VI Test Guide](https://teamspace.virtual-identity.com/display/DEV/2.+Tests)
 - [Spring Boot Web Test Guide](https://spring.io/guides/gs/testing-web/)
@@ -100,6 +105,7 @@ From now on finish all your challenges by creating a pull request.
 - Why are automated tests important?
 
 # 06. Implement a persisted data model
+**Complexity Level 3**
 ## Resources
 - [Spring Data Overview](https://spring.io/projects/spring-data)
 - [Spring Data JPA Guide](https://spring.io/guides/gs/accessing-data-jpa/)
@@ -130,8 +136,8 @@ From now on, write tests for all your challenges.
 - What is Spring Data? 
 
 # 07. REST APIs
+**Complexity Level 3**
 ## Resources
-
 - [HATEOAS](https://martinfowler.com/articles/richardsonMaturityModel.html)
 - [HATEOAS a simple explanation](https://www.e4developer.com/2018/02/16/hateoas-simple-explanation/)
 - [HAL Specification](http://stateless.co/hal_specification.html)
@@ -163,7 +169,27 @@ Grant that exceptions and errors in your services and controllers are fetched an
 - What is HAL?
 - What is Swagger and OpenAPI?
 
-# 08. GraphQL Interfaces
+# 08. Search
+**Complexity Level 3**
+## Resources
+- [Solr](http://lucene.apache.org/solr/)
+- [Spring Data Solr](https://spring.io/projects/spring-data-solr)
+- [ElasticSearch](https://www.elastic.co/products/elasticsearch)
+- [Spring Data ElasticSearch](https://spring.io/projects/spring-data-elasticsearch)
+- [Hibernate Search](http://hibernate.org/search/)
+
+## Challenge
+Implement a search that makes it possible to search for blog entries within its title, body as well as author first- and lastname. The search should consist of a service and an endpoint with pagination.
+Possible Solutions can be based on an embedded Solr or ElasticSearch Server as well as Hibernate Search. 
+
+## Questions
+- What is the most popular search library in Java?
+- What popular java search frameworks and search servers exist?
+- What is the difference between searching and filtering?
+- What are facets?
+
+# 09. GraphQL Interfaces
+**Complexity Level 3**
 ## Resources
 - [Spring Boot GraphQL Tutorial](https://www.baeldung.com/spring-graphql)
 
@@ -172,3 +198,20 @@ Grant that exceptions and errors in your services and controllers are fetched an
 ## Questions
 - What is GraphQL?
 - In which cases would yo prefer GraphQL over REST?
+
+# 10. Containers
+**Complexity Level 3**
+## Resources
+- Thousands of websites related to Docker ;-)
+- [Spring Boot with Docker](https://spring.io/guides/gs/spring-boot-docker/)
+
+## Challenge
+Containerize your application into a Docker image. 
+Run your application locally with Docker and call your endpoints to test it.
+
+## Questions
+- What is containerization and what is Docker?
+- What is a Docker image and what is a docker container?
+- How are Docker images structured? 
+- What is the advantage of containerization in relation to deployments?
+- In which contexts and on which platforms you can use Docker images?
