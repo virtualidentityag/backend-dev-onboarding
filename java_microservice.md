@@ -191,13 +191,24 @@ Possible Solutions can be based on an embedded Solr or ElasticSearch Server as w
 # 09. GraphQL Interfaces
 **Complexity Level 3**
 ## Resources
+- [GraphQL official website](https://graphql.org/)
 - [Spring Boot GraphQL Tutorial](https://www.baeldung.com/spring-graphql)
 
 ## Challenge
+Let's create another API for our tiny blog application. Why? Actually we want to be flexible with approaches to build APIs for different client types.
+
+#### Specify graphQL schema
+
+Please specify schema to fetch and change author and blog entry data.
+
+#### Add resolver implementations
+
+Implement both query and mutation resolvers of your defined schema.
 
 ## Questions
 - What is GraphQL?
 - In which cases would yo prefer GraphQL over REST?
+- Do you observe any problem with error handling regarding different clients? What approach would you choose to resolve it?
 
 # 10. Containers
 **Complexity Level 3**
