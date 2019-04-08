@@ -10,3 +10,4 @@ For backend development at VI, we basically have 2 supported technology stacks:
 - Serverless functions (built with AWS services, especially  Lambda functions)
 
 To start your onboarding on the Java Microservices stack, go on [here](java_microservice.md) 
+To continue your onboarding on Serverless Microservices, go on [here](serverless_microservice.md) 
