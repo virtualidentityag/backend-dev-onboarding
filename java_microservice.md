@@ -226,3 +226,20 @@ Run your application locally with Docker and call your endpoints to test it.
 - How are Docker images structured? 
 - What is the advantage of containerization in relation to deployments?
 - In which contexts and on which platforms you can use Docker images?
+
+# 11. Documentation
+**Complexity Level 1**
+## Resources
+We have projects of different size, context and technology stacks. That's why we want to have them meaningfully documented.
+But we don't want to document much. Especially, we only document the **why** and not the **what**.
+- process documentation (setup/deploying). Format: README.md in the project top-level folder
+- system and architecture documentation: [ADR (Architectural Decision Records)](https://github.com/adr/madr), [how to install](https://github.com/npryce/adr-tools)
+- self-documenting code according to "Clean Code"
+- in addition to ADR, we add architecture diagrams as PNG and source, e.g. yed-files. These will also be added into the "doc" folder of ADR and commited to the repository.
+
+## Challenge
+Install and create an ADR entry for the project
+
+## Questions
+- What is most important thing according to ADR while writing documentation?
+- Discuss content of created ADR
