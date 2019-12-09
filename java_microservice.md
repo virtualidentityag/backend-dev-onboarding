@@ -18,7 +18,7 @@ Install and setup the following tools in your machine:
 
 ## Challenge
 #### Checkout the backend onboarding example project
-The project is located in [Bitbucket](https://git.virtual-identity.com/projects/VI/repos/vi-backend-onboarding)
+Create a fork of the [Boilerplate Template Repository](https://github.com/virtualidentityag/spring-boot-boilerplate)
 Please import the project as a Maven project in your IDE.
 
 #### Build and run the application
@@ -141,7 +141,7 @@ From now on, write tests for all your challenges.
 - [HATEOAS](https://martinfowler.com/articles/richardsonMaturityModel.html)
 - [HATEOAS a simple explanation](https://www.e4developer.com/2018/02/16/hateoas-simple-explanation/)
 - [HAL Specification](http://stateless.co/hal_specification.html)
-- [Swagger/OpenAPI](Swagger/OpenAPI) 
+- [Swagger/OpenAPI](https://swagger.io/docs/specification/about/) 
 - [Spring MVC Exception Handling](https://spring.io/blog/2013/11/01/exception-handling-in-spring-mvc)
 
 ## Challenge
