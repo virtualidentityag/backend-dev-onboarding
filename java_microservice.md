@@ -1,59 +1,54 @@
 # 01. Setup Environment
 **Complexity Level 0**
 ## Resources
-- [Backend Development Standards](https://teamspace.virtual-identity.com/display/DEV/Standards+for+Backend+Developoment)
+- [Backend Development Standards](https://collaboration.virtual-identity.com/display/DEV/Standards+for+Backend+Development)
 
 ## Challenge
 #### Install required software and tools
 Install and setup the following tools in your machine: 
-- [OpenJDK](https://openjdk.java.net/) 
-- [Maven](https://maven.apache.org/) 
+- [OpenJDK V13](https://openjdk.java.net/) 
 - [Git](https://git-scm.com/)
 - [Intellij](https://www.jetbrains.com/idea/) 
   
 # 02. Setup your first project
 **Complexity Level 1**
 ## Resources
-- [Boilerplate Application](https://teamspace.virtual-identity.com/display/DEV/1.+Boilerplate+Application)
+- [Boilerplate Application](https://collaboration.virtual-identity.com/display/DEV/1.+Boilerplate+Application)
 
 ## Challenge
-#### Checkout the backend onboarding example project
-Create a fork of the [Boilerplate Template Repository](https://github.com/virtualidentityag/spring-boot-boilerplate)
-Please import the project as a Maven project in your IDE.
+#### Create a example project
+Create a own github repository and use the [Boilerplate Template Repository](https://github.com/virtualidentityag/spring-boot-boilerplate) as template.
+Please import the project as a Gradle project in your IDE.
 
 #### Build and run the application
 Build the application within your IDE. When compilation succeeded, run the project within your IDE.
-To check if the application has started successfully, call the already existing root endpoint in your browser and see the response. 
+To check if the application has started successfully, call an already existing endpoint in your browser and see the response. 
 
 ## Questions
-- What is Maven?
-- What is the benefit of using Maven?
-- How can you add dependencies to your java project with Maven?
-- How can you build your project with Maven? 
+- What is Gradle?
+- What is the benefit of using Gradle?
+- How can you add dependencies to your java project with Gradle?
+- How can you build your project with Gradle? 
 - Which are the key technologies/libraries used in the boilerplate application?
 
 # 03. Make your first pull request
 **Complexity Level 1**
 ## Resources
-- [Git Usage](https://teamspace.virtual-identity.com/display/DEV/2.+GIT)
+- [Git Usage](https://collaboration.virtual-identity.com/display/DEV/2.+GIT)
 - [Spring Boot Getting Started Guide](https://spring.io/guides/gs/spring-boot)
 
 ## Challenge
-#### Create a new branch with your name from development branch.
-You can do that in the Web UI of Bitbucket.
-This branch will be your personal development branch for the onboarding project.
-
-#### Create a feature branch from your personal development branch
+#### Create a feature branch from master branch
 Switch to that feature branch in your IDE. 
 According to the Gitflow-Workflow, in a feature branch you have an isolated environment to implement new cool stuff and send pull requests to a reviewer when you have finished your work.
 
 #### Implement a Spring MVC Controller
-In swagger api defination file a test endpoint has been defined. Develop a controller for that endpoint and return a string "Hello VI" as response.
+In swagger api definition file, add a test endpoint. Develop a controller for that endpoint and return a string "Hello VI" as response.
 Rebuild your application and rerun it locally to check the newly implemented api response.
 
 #### Create a pull request 
 Commit and push your changes to them remote feature branch.
-Create a pull request from your feature branch to your personal development branch in the Web UI of Bitbucket. Assign this pull request to your mentor as a reviewer.
+Create a pull request from your feature branch to master branch. Assign this pull request to your mentor as a reviewer.
 
 ## Questions
 - What's Git?
@@ -63,6 +58,7 @@ Create a pull request from your feature branch to your personal development bran
 - What does push mean?
 - What does fetch mean?
 - What is a pull request?
+- What is GitHub?
 
 - What is Spring?
 - What ist Spring Boot?
@@ -70,7 +66,7 @@ Create a pull request from your feature branch to your personal development bran
 # 04. Adhere to the Coding Guidelines
 **Complexity Level 1**
 ## Resources
-- [Java Coding Guidelines](https://teamspace.virtual-identity.com/display/DEV/1.+Java#id-1.Java-CodingGuidelines)
+- [Java Coding Guidelines](https://collaboration.virtual-identity.com/display/DEV/1.+Java#id-1.Java-CodingGuidelines)
 
 ## Challenge
 #### Configure Code Formatter
@@ -82,12 +78,12 @@ If there is any change on your code, comiit an push it again and create a new pu
 
 ## Questions
 - What are (in your opinion) the most important rules for writing clean code?
-- How can the compliance with these rules can be enforced?
+- How the compliance with these rules can be enforced?
 
 # 05. Add automated tests
 **Complexity Level 2**
 ## Resources
-- [VI Test Guide](https://teamspace.virtual-identity.com/display/DEV/2.+Tests)
+- [VI Test Guide](https://collaboration.virtual-identity.com/display/DEV/2.+Tests)
 - [Spring Boot Web Test Guide](https://spring.io/guides/gs/testing-web/)
 - [Spring Web Tests Reference](https://docs.spring.io/spring/docs/current/spring-framework-reference/testing.html#spring-mvc-test-framework)
 
@@ -118,7 +114,7 @@ With this blog software, it should be possible to manage authors (with a first- 
 An author can write multiple entries and an entry could be written by only one author.
 When an author is deleted, all entries should be deleted too.
 
-#### Define your data model with enities
+#### Define your data model with entities
 Define entities for author and blog entry. You should use JPA annotations.
 
 #### Implement CRUD Services for the entities
@@ -151,7 +147,7 @@ So far, we created business and persistence logic for our tiny blogging software
 
 Please specify new HAL endpoints for all existing CRUD methods of your services in the api.yaml file. Consider meaningful HTTP methods, request models, response codes and response models. Models should be defined in JSON.
 
-Finally recompile your project with maven and check the generated java sources  for your endpoint definitions and response models.
+Finally rebuild your project with Gradle and check the generated java sources  for your endpoint definitions and response models.
 
 #### Add controller implementations
 
@@ -195,13 +191,13 @@ Possible Solutions can be based on an embedded Solr or ElasticSearch Server as w
 - [Spring Boot GraphQL Tutorial](https://www.baeldung.com/spring-graphql)
 
 ## Challenge
-Let's create another API for our tiny blog application. Why? Actually we want to be flexible with approaches to build APIs for different client types.
+Let's create another API for our tiny blog application. Why? Actually we want to be flexible with approaches to build APIs for different client types.	
 
-#### Specify graphQL schema
+#### Specify graphQL schema	
 
-Please specify schema to fetch and change author and blog entry data.
+Please specify schema to fetch and change author and blog entry data.	
 
-#### Add resolver implementations
+#### Add resolver implementations	
 
 Implement both query and mutation resolvers of your defined schema.
 
