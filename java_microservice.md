@@ -5,15 +5,27 @@
 
 ## Challenge
 #### Install required software and tools
-Install and setup the following tools in your machine: 
-- [OpenJDK V13](https://openjdk.java.net/) 
+Install and setup the following tools in your machine:
+- [OpenJDK V13](https://openjdk.java.net/)
 - [Git](https://git-scm.com/)
-- [Intellij](https://www.jetbrains.com/idea/) 
-  
+- [Intellij](https://www.jetbrains.com/idea/)
+
 # 02. Setup your first project
 **Complexity Level 1**
 ## Resources
 - [Boilerplate Application](https://collaboration.virtual-identity.com/display/DEV/1.+Boilerplate+Application)
+
+#### GitHub
+If you do not have an account at GitHub already, you will need one so, go to: [https://github.com/join](https://github.com/join) and create one.
+Please note that GitHub is a professional social network and choose an appropriate username.
+And since you will soon be added to the <i>virtualidenityag</i> organization on GitHub, it's required that you enable two-factor authentication as a extra layer of protection. To do it, got to *settings > security*. There are three methods you can choose from (Authenticator app, Security keys and SMS). Just pick the one you're more comfortable with.
+
+#### SSH
+It's also relevant that you know about the SSH protocol. It allows you to connect and authenticate to remote servers and services. With SSH keys, you can connect to GitHub without using your username and password everytime. You can get all the information about how to create and setup your SSH keys at the [GitHub support page](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh).
+
+#### Git clients
+Some people prefer to use graphical tools to use git, so if you do not have installed a git client already, find and install a [git client for your local operating system](https://git-scm.com/downloads/guis).
+There are a lot of options so feel free to use the one that you enjoy more!
 
 ## Challenge
 #### Create a example project
@@ -22,13 +34,13 @@ Please import the project as a Gradle project in your IDE.
 
 #### Build and run the application
 Build the application within your IDE. When compilation succeeded, run the project within your IDE.
-To check if the application has started successfully, call an already existing endpoint in your browser and see the response. 
+To check if the application has started successfully, call an already existing endpoint in your browser and see the response.
 
 ## Questions
 - What is Gradle?
 - What is the benefit of using Gradle?
 - How can you add dependencies to your java project with Gradle?
-- How can you build your project with Gradle? 
+- How can you build your project with Gradle?
 - Which are the key technologies/libraries used in the boilerplate application?
 
 # 03. Make your first pull request
@@ -39,14 +51,14 @@ To check if the application has started successfully, call an already existing e
 
 ## Challenge
 #### Create a feature branch from master branch
-Switch to that feature branch in your IDE. 
+Switch to that feature branch in your IDE.
 According to the Gitflow-Workflow, in a feature branch you have an isolated environment to implement new cool stuff and send pull requests to a reviewer when you have finished your work.
 
 #### Implement a Spring MVC Controller
 In swagger api definition file, add a test endpoint. Develop a controller for that endpoint and return a string "Hello VI" as response.
 Rebuild your application and rerun it locally to check the newly implemented api response.
 
-#### Create a pull request 
+#### Create a pull request
 Commit and push your changes to them remote feature branch.
 Create a pull request from your feature branch to master branch. Assign this pull request to your mentor as a reviewer.
 
@@ -70,7 +82,7 @@ Create a pull request from your feature branch to master branch. Assign this pul
 
 ## Challenge
 #### Configure Code Formatter
-Download the Java Google Style Code Formatter from [here]( https://github.com/google/styleguide/blob/gh-pages/intellij-java-google-style.xml) and make sure it is configured in your IDE.  
+Download the Java Google Style Code Formatter from [here]( https://github.com/google/styleguide/blob/gh-pages/intellij-java-google-style.xml) and make sure it is configured in your IDE.
 
 #### Reformat your code
 Check and reformat your code from previous task based on the configured code formatter.
@@ -107,7 +119,7 @@ From now on finish all your challenges by creating a pull request.
 - [Spring Data JPA Guide](https://spring.io/guides/gs/accessing-data-jpa/)
 
 ## Challenge
-Let's start creating an application with some "real" logic. 
+Let's start creating an application with some "real" logic.
 In the onboarding project we will develop the backend for an (very simple) blog software.
 
 With this blog software, it should be possible to manage authors (with a first- and lastname) and blog entries  with a title, a text and a reference to an author.
@@ -129,7 +141,7 @@ From now on, write tests for all your challenges.
 ## Questions
 - What is JPA?
 - What is Hibernate?
-- What is Spring Data? 
+- What is Spring Data?
 
 # 07. REST APIs
 **Complexity Level 3**
@@ -137,7 +149,7 @@ From now on, write tests for all your challenges.
 - [HATEOAS](https://martinfowler.com/articles/richardsonMaturityModel.html)
 - [HATEOAS a simple explanation](https://www.e4developer.com/2018/02/16/hateoas-simple-explanation/)
 - [HAL Specification](http://stateless.co/hal_specification.html)
-- [Swagger/OpenAPI](https://swagger.io/docs/specification/about/) 
+- [Swagger/OpenAPI](https://swagger.io/docs/specification/about/)
 - [Spring MVC Exception Handling](https://spring.io/blog/2013/11/01/exception-handling-in-spring-mvc)
 
 ## Challenge
@@ -176,7 +188,7 @@ Grant that exceptions and errors in your services and controllers are fetched an
 
 ## Challenge
 Implement a search that makes it possible to search for blog entries within its title, body as well as author first- and lastname. The search should consist of a service and an endpoint with pagination.
-Possible Solutions can be based on an embedded Solr or ElasticSearch Server as well as Hibernate Search. 
+Possible Solutions can be based on an embedded Solr or ElasticSearch Server as well as Hibernate Search.
 
 ## Questions
 - What is the most popular search library in Java?
@@ -191,13 +203,13 @@ Possible Solutions can be based on an embedded Solr or ElasticSearch Server as w
 - [Spring Boot GraphQL Tutorial](https://www.baeldung.com/spring-graphql)
 
 ## Challenge
-Let's create another API for our tiny blog application. Why? Actually we want to be flexible with approaches to build APIs for different client types.	
+Let's create another API for our tiny blog application. Why? Actually we want to be flexible with approaches to build APIs for different client types.
 
-#### Specify graphQL schema	
+#### Specify graphQL schema
 
-Please specify schema to fetch and change author and blog entry data.	
+Please specify schema to fetch and change author and blog entry data.
 
-#### Add resolver implementations	
+#### Add resolver implementations
 
 Implement both query and mutation resolvers of your defined schema.
 
@@ -213,12 +225,12 @@ Implement both query and mutation resolvers of your defined schema.
 - [Spring Boot with Docker](https://spring.io/guides/gs/spring-boot-docker/)
 
 ## Challenge
-Containerize your application into a Docker image. 
+Containerize your application into a Docker image.
 Run your application locally with Docker and call your endpoints to test it.
 
 ## Questions
 - What is containerization and what is Docker?
 - What is a Docker image and what is a docker container?
-- How are Docker images structured? 
+- How are Docker images structured?
 - What is the advantage of containerization in relation to deployments?
 - In which contexts and on which platforms you can use Docker images?
