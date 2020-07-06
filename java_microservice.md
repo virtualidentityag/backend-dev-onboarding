@@ -62,6 +62,8 @@ Rebuild your application and rerun it locally to check the newly implemented api
 Commit and push your changes to them remote feature branch.
 Create a pull request from your feature branch to master branch. Assign this pull request to your mentor as a reviewer.
 
+From now on, merging to the master branch should always be done by merging a pull request that is approved by another reviewer.
+
 ## Questions
 - What's Git?
 - What is a repository?
